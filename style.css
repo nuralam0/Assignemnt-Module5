@@ -1,0 +1,274 @@
+/* Button 1: Gradient Background */
+.btn-gradient {
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(45deg, #f06595, #ff6b6b);
+}
+
+/* Button 2: Outline with Shadow */
+.btn-outline-shadow {
+    background: white;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-shadow:hover {
+    background: #007bff;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button 3: Neon Glow */
+.btn-neon {
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #00e6e6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    color: #00e6e6;
+    box-shadow: 0 0 5px #00e6e6, 0 0 25px #00e6e6, 0 0 50px #00e6e6, 0 0 200px #00e6e6;
+}
+
+/* Button 4: Rounded with Icon */
+.btn-rounded-icon {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-rounded-icon i {
+    font-size: 16px;
+}
+
+.btn-rounded-icon:hover {
+    background: #218838;
+}
+
+/* Button 5: 3D Effect */
+.btn-3d {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px #0056b3;
+    transition: all 0.3s ease;
+}
+
+.btn-3d:active {
+    box-shadow: 0 2px #0056b3;
+    transform: translateY(3px);
+}
+
+/* Button 6: Ghost Button */
+.btn-ghost {
+    background: transparent;
+    color: #ffc107;
+    border: 2px solid #ffc107;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-ghost:hover {
+    background: #ffc107;
+    color: white;
+}
+
+/* Button 7: Text Button */
+.btn-text {
+    background: none;
+    color: #6c757d;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.btn-text:hover {
+    color: #495057;
+    text-decoration: underline;
+}
+
+
+/* Button 8: Animated Border */
+.btn-animated-border {
+    background: transparent;
+    color: #17a2b8;
+    padding: 10px 20px;
+    border: 2px solid #17a2b8;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.btn-animated-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 100%;
+    background: #17a2b8;
+    transition: all 0.4s ease;
+    transform: translateX(-50%) scaleX(0);
+    z-index: 1;
+}
+
+.btn-animated-border:hover::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.btn-animated-border:hover {
+    color: white;
+}
+
+/* Button 9: Pill Button */
+.btn-pill {
+    background: #fd7e14;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+}
+
+.btn-pill:hover {
+    background: #e8590c;
+}
+
+/* Button 10: Inverted Button */
+.btn-inverted {
+    background: #6f42c1;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-inverted:hover {
+    background: transparent;
+    color: #6f42c1;
+    border: 2px solid #6f42c1;
+}
+
+/* Custom responsive styles */
+
+/* Navbar for small screens */
+@media (max-width: 767.98px) {
+    .navbar-expand-lg .navbar-nav {
+        margin-left: 0;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/* Cards section */
+@media (max-width: 767.98px) {
+    .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Blogs section */
+@media (max-width: 767.98px) {
+    .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Form section */
+@media (max-width: 767.98px) {
+    .form-group form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Table and List Group section */
+@media (max-width: 767.98px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Progress bars */
+@media (max-width: 767.98px) {
+    .progress {
+        width: 100%;
+    }
+    .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Buttons */
+@media (max-width: 767.98px) {
+    .btn-rounded-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Pagination */
+@media (max-width: 767.98px) {
+    .pagination {
+        flex-direction: column;
+    }
+    .page-item {
+        margin-bottom: 5px;
+    }
+}
